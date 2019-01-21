@@ -1,0 +1,14 @@
+void
+let x = 0 
+begin
+  let y = 0 
+  begin
+    let z = 0 
+    read ( x ) :
+    read ( z ) :
+  end
+  read ( y ) :
+  print ( y ) :
+  print ( z ) : 
+  print ( x ) :
+end

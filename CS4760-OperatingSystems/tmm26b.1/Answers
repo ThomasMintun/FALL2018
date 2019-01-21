@@ -1,0 +1,29 @@
+1. Run the program
+
+2. Process ID diagram
+	Answer: 
+
+3. Experiment with different values for the command-line argument to find out the largest number of processes that the program can generate. Observe the fraction that are adopted by init.
+	Answer: I ran the program with 1,000,000 processes and it ran fine, but took awhile to run. The 1,000,000 argument stopped at process number 397,353. It is late right now, and I do not want to try a higher number. I am pretty sure the program will take any integer in the C programming language integer range which is quite large and may take a long time to terminate. 
+
+4. Place sleep(10); directly before the final fprintf statement in Program 3.1. What is the maximum number of processes generated in this case?
+	Answer: The maximum number of processes is the same; seemingly infinite or (n) processes. However the program "sleeps" for 10 seconds or m seconds (sleep(m)) before outputting the results. 
+
+5. Put a loop around the final fprintf in Program 3.1. Have the loop execute k times. Put sleep(m); inside this loop after the fprintf. Pass k and m on the command line. Run the program for several values of n, k and m. Observe the results.
+	Answer: n processes remain after k iterations after adding a loop around the final outputting fprintf statement. 
+
+6. Modify Program 3.1 by putting a wait function call before the final fprintf statement. How does this affect the output of the program?
+	Answer: The output of the program is in decending order. Here is output:
+	Usage: ./ass1 processes
+	i: 7 process ID: 5923 parent ID: 5922 child ID: -1
+ 	i: 6 process ID: 5922 parent ID: 5921 child ID: 5923
+ 	i: 5 process ID: 5921 parent ID: 5920 child ID: 5922
+ 	i: 4 process ID: 5920 parent ID: 5919 child ID: 5921
+ 	i: 3 process ID: 5919 parent ID: 5918 child ID: 5920
+ 	i: 2 process ID: 5918 parent ID: 5917 child ID: 5919
+ 	i: 1 process ID: 5917 parent ID: 5618 child ID: 5918
+
+7. Modify Program 3.1 by replacing the final fprintf statement with four fprintf statements, one each for the four integers displayed. Only the last one should output a newline. What happens when you run this program? Can you tell which process generated each part of the output? Run the program several times and see if there is a difference in the output.
+	Answer: There is no noticable difference in the output. 
+
+8. Modify Program 3.1 by replacing the final fprintf statement with a loop that reads n chars characters from standard input, one character at a time, and puts them in an array called mybuf. The values of n and nchars should be passed as command-line arguments. After the loop, put a '\0' character in entry nchars of the array so that it contains a string. Output to standard error in a single fprintf the process ID followed by a colon followed by the string in mybuf. Run the program for several values of n and nchars. Observe the results. Press the Return key often and continue typing at the keyboard until all of the processes have exited.

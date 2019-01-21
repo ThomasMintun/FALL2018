@@ -1,0 +1,9 @@
+Storage=Global
+
+The FSA table is in file: scanner.cpp
+
+The scanner is in file scanner.cpp
+
+.asm code generation is done in semantics.cpp files
+
+parser is in parser.cpp

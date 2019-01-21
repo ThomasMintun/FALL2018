@@ -1,0 +1,11 @@
+void
+begin
+	let z = 1
+	begin
+		let z = 1
+		read ( x ) :
+		print ( 1 ) :
+		iter ( x > = 0 )
+			print ( 2 ) :
+	end
+end

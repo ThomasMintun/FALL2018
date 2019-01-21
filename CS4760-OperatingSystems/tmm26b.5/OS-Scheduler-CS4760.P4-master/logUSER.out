@@ -1,0 +1,7 @@
+PROCESS: #34414 received scheduling message @ 000.106946000
+PROCESS: #34414 entered critical section @ 000.106985000
+PROCESS: #34414 requesting control @ 000.107012000
+PROCESS: #34414 began running @ 001.001602000
+PROCESS: #34414 completed @ 001.108338000
+PROCESS: #34414 exited critical section @ 001.108338000
+PROCESS: #34414 quitting and relinquishing control @ 001.108338000

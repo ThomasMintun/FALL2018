@@ -1,0 +1,9 @@
+I chose option 3. FSA table + driver. 
+
+The FSA table is in file: scanner.cpp
+
+The driver is in file: testScanner.cpp --> function is called: void testScanner(std::ifstream& infile)
+
+The scanner is in file scanner.cpp
+
+For testing: do not enter file name for keyboard inpput. Or enter filenames P1_test or P2_test or P3_test.

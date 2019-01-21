@@ -1,0 +1,24 @@
+preemptive vs non preemptive scheduler
+know how to implement scheduling algorithms
+	slide 64/105.... P0 || arrival time || cpu burst --> be able to do these examples. Round Robin scheduler. Know what causes these algorithms to fail. WHy go from FIFO to round robin? Why go from Round Robin to multi level feedback queue? Why does multilevel feedback queue go to larer time quantum as it goes on? Figure 9.5.... What is average wait time of a process given...? What is CPU utilization given ...? Include context switching when showing results. If end up with a tie on algorithms... specify how/why you did a tie breaker (no right answer but need justification).
+ NO LINUX SCHEDULER QUESTIONS ON TEST
+
+
+
+
+Deadlocks: know difference between deadlock and spinlock. Know what a dead lock is. What can lead to a deadlock? What problems do deadlocks cause? WHat context do deadlocks happen in?
+	Given system... What can you do to to the system to make it deadlock?? Process Resouce GRAPHS :: draw a resource allocation grapgh for a system or be able to tell if system is in deadlock given PROCESS RESOURCE GRAPH. RESOURCE ALLOCATION GRAPH. 
+Know necessary and sufficient condtions for deadlock and KNOW WHAT THESE TERMS MEAN. 
+Deadlock detection... given matricies be able to tell if system is in deadlock. FIGURE 6.10.
+Deadlock recovery: pros and cons of recovering from deadlock. 
+Deadlock Prevention: 
+prevention/avoidance/protection: know pros/cons of each
+What is means when algor says its in unsafe state? What does it mean if system is safe? 
+Given slide 53/60 can you tell if system is safe or not??
+main memory use preemtion... for swappable space use deadlock avoidance.
+
+
+
+
+MEMORY MANAGEMENT:
+idea of virtual memory manager. physical vs logical memory. What does it mean for code to be relocatable. He gives ML code and asks if it is relocateable. Bus error vs seg fault. ex: memory request coming into system. 
